@@ -13,6 +13,6 @@ class Mmnamespace_Mmmodule_HelloController extends Mage_Core_Controller_Front_Ac
 {
     public function worldAction()
     {
-        echo 'Hello, World!';
+        echo 'Hello, World from world action controller!';
     }
 }
