@@ -14,5 +14,12 @@
 <layout version="0.1.0">
     <mmmodule_index_index>
         <update handle="page_two_columns_right" />
+
+        <!--create reference using  magentos core templates block to point to
+         mmmodule/welcom.phtml in app design ... template/mmmodule/welcome.phtml
+         -->
+        <reference name="content">
+            <block type="core/template" template="mmmodule/welcome.phtml" />
+        </reference>
     </mmmodule_index_index>
 </layout>
