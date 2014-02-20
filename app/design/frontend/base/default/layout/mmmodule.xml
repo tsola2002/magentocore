@@ -19,7 +19,7 @@
          mmmodule/welcom.phtml in app design ... template/mmmodule/welcome.phtml
          -->
         <reference name="content">
-            <block type="core/template" template="mmmodule/welcome.phtml" />
+            <block type="mmmodule/welcome" />
         </reference>
     </mmmodule_index_index>
 </layout>
