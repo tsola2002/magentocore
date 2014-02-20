@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/code/local/Mmnamespace/Mmmodule/etc/config.xml
+ *
+ *
+ *
+ *
+ * @author    Omatsola Isaac Sobotie <tsola2002@yahoo.co.uk>
+ * @category  Mmnamspace
+ * @package   Mmmodule
+ *
+ */
+-->
+<config>
+    <modules>
+        <Mmnamespace_Mmmodule>
+            <version>0.0.0</version>
+        </Mmnamespace_Mmmodule>
+    </modules>
+    <global>
+        <models>
+            <example>
+                <class>Mmnamespace_Mmmodule_Model</class>
+            </example>
+        </models>
+        <blocks>
+            <example>
+                <class>Mmnamespace_Mmmodule_Block</class>
+            </example>
+        </blocks>
+        <helpers>
+            <example>
+                <class>Mmnamespace_Mmmodule_Helper</class>
+            </example>
+        </helpers>
+    </global>
+</config>

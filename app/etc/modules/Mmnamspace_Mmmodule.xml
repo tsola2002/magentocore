@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/etc/modules/Mmnamespace_Mmmodule.xml
+ *
+ *
+ *
+ *
+ * @author    Omatsola Isaac Sobotie <tsola2002@yahoo.co.uk>
+ * @category  Mmnamespace
+ * @package   Mmodule
+ *
+ */
+-->
+<config>
+    <modules>
+        <Mmnamespace_Mmmodule>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends />
+        </Mmnamespace_Mmmodule>>
+    </modules>
+</config>
