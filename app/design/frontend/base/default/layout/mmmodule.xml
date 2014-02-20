@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE layout>
+<!--
+/**
+ * app/design/frontend/base/default/layout/mmmodule.xml
+ *
+ *
+ * @category  Mmnamespace
+ * @package   Mmmodule
+ *
+ *
+ */
+-->
+<layout version="0.1.0">
+    <mmmodule_index_index>
+        <update handle="page_two_columns_right" />
+    </mmmodule_index_index>
+</layout>

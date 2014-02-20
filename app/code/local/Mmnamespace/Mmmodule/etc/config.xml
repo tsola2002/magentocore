@@ -21,32 +21,41 @@
     </modules>
     <global>
         <models>
-            <example>
+            <mmmodule>
                 <class>Mmnamespace_Mmmodule_Model</class>
-            </example>
+            </mmmodule>
         </models>
         <blocks>
-            <example>
+            <mmmodule>
                 <class>Mmnamespace_Mmmodule_Block</class>
-            </example>
+            </mmmodule>
         </blocks>
         <helpers>
-            <example>
+            <mmmodule>
                 <class>Mmnamespace_Mmmodule_Helper</class>
-            </example>
+            </mmmodule>
         </helpers>
     </global>
 
     <!--used to route urls with module name to module-->
     <frontend>
         <routers>
-            <example>
+            <mmmodule>
                 <use>standard</use>
                 <args>
                     <frontName>mmmodule</frontName>
                     <module>Mmnamespace_Mmmodule</module>
                 </args>
-            </example>
+            </mmmodule>
         </routers>
+
+        <!--  initialize layout files  -->
+        <layout>
+            <updates>
+                <mmmodule>
+                    <file>mmmodule.xml</file>
+                </mmmodule>
+            </updates>
+        </layout>
     </frontend>
 </config>

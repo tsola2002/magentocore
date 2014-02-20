@@ -13,6 +13,10 @@ class Mmnamespace_Mmmodule_IndexController extends Mage_Core_Controller_Front_Ac
 {
     public function indexAction()
     {
-        echo 'Hello, World!, I am frm the index controller';
+        //loading layout
+        $this->loadLayout();
+
+        //rendering loaded layout
+        return $this->renderLayout();
     }
 }
