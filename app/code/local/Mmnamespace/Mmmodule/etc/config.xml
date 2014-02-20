@@ -36,4 +36,17 @@
             </example>
         </helpers>
     </global>
+
+    <!--used to route urls with module name to module-->
+    <frontend>
+        <routers>
+            <example>
+                <use>standard</use>
+                <args>
+                    <frontName>mmmodule</frontName>
+                    <module>Mmnamespace_Mmmodule</module>
+                </args>
+            </example>
+        </routers>
+    </frontend>
 </config>
