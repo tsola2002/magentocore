@@ -10,7 +10,7 @@
  * @package   Example
  * @copyright Copyright (c) 2012 Packt Publishing (http://packtpub.com)
  */
-class MasteringMagento_Example_Helper_Data extends Mage_Core_Helper_Abstract
+class Mmnamespace_Mmmodule_Helper_Data extends Mage_Core_Helper_Abstract
 {
     // Empty helper class
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/code/local/Mmnamespace/Mmmodule/etc/adminhtml.xml
+ *
+ *
+
+ * @category  Mmnamespace
+ * @package   Mmmodule
+ */
+-->
+        <!--  this code will process urls with that front name  -->
+<config>
+    <menu>
+        <mmmodule translate="title" module="mmmodule">
+            <title>Mmmodule</title>
+            <sort_order>1000</sort_order>
+            <action>adminhtml/mmmodule</action>
+        </mmmodule>
+    </menu>
+</config>

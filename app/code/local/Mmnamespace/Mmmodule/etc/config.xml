@@ -37,6 +37,19 @@
         </helpers>
     </global>
 
+    <!--  routing front page menu to appropriate controller -->
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mmmodule before="Mage_Adminhtml">Mmnamespace_Mmmodule_Adminhtml</mmmodule>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
     <!--used to route urls with module name to module-->
     <frontend>
         <routers>
@@ -49,7 +62,6 @@
             </mmmodule>
         </routers>
 
-        <!--  initialize layout files  -->
         <layout>
             <updates>
                 <mmmodule>
