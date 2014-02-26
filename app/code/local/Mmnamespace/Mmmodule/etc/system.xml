@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE config>
+<!--
+/**
+ * app/code/local/Mmnamespace/Mmmodule/etc/system.xml
+ *
+ *
+ * @category  Mmnamespace
+ * @package   Mmmodule
+ */
+-->
+        <!--  this code adds a fieldset to an existing general section  -->
+<config>
+    <sections>
+        <general translate="label">
+            <groups>
+                <mmmodule translate="label">
+                    <label>Mmmodule Options</label>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <some_field translate="label">
+                            <label>Mmmodule Field</label>
+                            <frontend_type>text</frontend_type> <!-- More frontend types can be found in the lib/Varien/Data/Form/Element folder -->
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </some_field>
+                    </fields>
+                </mmmodule>
+            </groups>
+        </general>
+    </sections>
+</config>
