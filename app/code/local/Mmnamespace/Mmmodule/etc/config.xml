@@ -20,10 +20,23 @@
         </Mmnamespace_Mmmodule>
     </modules>
     <global>
+        <!--  this code tells magento to use resources  -->
         <models>
             <mmmodule>
                 <class>Mmnamespace_Mmmodule_Model</class>
+                <resourceModel>mmmodule_resource</resourceModel>
             </mmmodule>
+            <mmmodule_resource>
+                <class>Mmnamespace_Mmmodule_Model_Resource</class>
+                <entities>
+                    <event>
+                        <table>mmmodule_event</table>
+                    </event>
+                    <event_registrant>
+                        <table>mmmodule_event_registrant</table>
+                    </event_registrant>
+                </entities>
+            </mmmodule_resource>
         </models>
         <blocks>
             <mmmodule>
