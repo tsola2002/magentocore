@@ -48,6 +48,17 @@
                 <class>Mmnamespace_Mmmodule_Helper</class>
             </mmmodule>
         </helpers>
+        <!--  initializing a predispatch observer gets fired anytime a controller is about to render an action -->
+        <events>
+            <controller_action_predispatch>
+                <observers>
+                    <mmmodule_observer>
+                        <class>mmmodule/observer</class>
+                        <method>controllerActionPredispatch</method>
+                    </mmmodule_observer>
+                </observers>
+            </controller_action_predispatch>
+        </events>
     </global>
 
     <!--  routing front page menu to appropriate controller -->
