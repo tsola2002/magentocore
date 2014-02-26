@@ -23,4 +23,25 @@ class Mmnamespace_Mmmodule_Adminhtml_EventController extends Mage_Adminhtml_Cont
 
         return $this->renderLayout();
     }
+
+    public function saveAction()
+    {
+        //gathering form field parameters from the url
+        $eventId = $this->getRequest()->getParam('event_id');
+        $eventModel = Mage::getModel('mmmodule/event')->load($eventId);
+
+        //save event to database
+        if ( $data = $this->getRequest()->getPost() ) {
+            try {
+                $eventModel->addData($data)->save();
+                Mage::getSingleton('adminhtml/session')->addSuccess(
+                    $this->__("Your event has been saved!")
+                );
+            } catch ( Exception $e ) {
+                Mage::getSingleton('adminhtml/session')->addError($e->getMessage());
+            }
+        }
+
+        $this->_redirect('*/*/index');
+    }
 }
