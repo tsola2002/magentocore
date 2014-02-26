@@ -14,9 +14,9 @@
 <config>
     <menu>
         <mmmodule translate="title" module="mmmodule">
-            <title>Mmmodule</title>
+            <title>Events</title>
             <sort_order>1000</sort_order>
-            <action>adminhtml/mmmodule</action>
+            <action>adminhtml/event</action>
         </mmmodule>
     </menu>
 </config>
