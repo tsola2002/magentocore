@@ -17,9 +17,13 @@ class Mmnamespace_Mmmodule_Adminhtml_EventController extends Mage_Adminhtml_Cont
         $this->loadLayout();
         $this->_setActiveMenu('mmmodule/events');
 
-        $this->_addContent(
+        /*$this->_addContent(
             $this->getLayout()->createBlock('mmmodule/adminhtml_event_edit')
-        );
+ );*/
+
+        $this->_addContent(
+            $this->getLayout()->createBlock('mmmodule/adminhtml_event')
+ );
 
         return $this->renderLayout();
     }
